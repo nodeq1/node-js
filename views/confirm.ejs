@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/login.css" />
+    <link rel="stylesheet" href="./css/confirm.css" />
+    <title>confirmation </title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="forms-container">
+            <div class="signin-signup">
+
+                <form action="" class="sign-in-form" method="post">
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Enter your Code" name="confirm" />
+
+                    </div>
+                    <p style="color: red; font-size: 14px;"><% if (typeof errors !== 'undefined' && errors.length > 0) { %>
+                        <%= errors[0].msg %>
+                        <% } %></p>
+                    <button id="but" type="submit" class="btn">Sind</button>
+
+                </form>
+
+
+
+            </div>
+        </div>
+
+        <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="content">
+                    <h1 style="font-size: 30px;">
+                        The confirmation code has been sent to your email, please chick it
+                    </h1>
+                </div>
+            </div>
+            <div class="panel right-panel">
+                <div class="content">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/login.js"></script>
+
+
+</body>
+
+</html>
+
+
+
+

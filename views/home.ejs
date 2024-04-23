@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <div class="hed">
+                <h1>LOGO</h1>
+                <ul>
+                    <li class="active">Home</li>
+                    <li>About</li>
+                    <li>serivces</li>
+                    <li>Events</li>
+                </ul>
+                <% if (typeof active !== 'undefined' && active === true) { %>
+                    <form action="/logout" method="post">
+                        <button type="submit"> logout</button>
+                    </form>
+                <% }  %>
+            </div>
+        </div>
+    </nav>
+    <div class="hero">
+        <div class="container">
+            <div class="content">
+                <h1>Make Stunning Presentations <span>3D</span> </h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore voluptatum accusantium
+                    exercitationem in odit deserunt perspiciatis ea magni sint esse, odio, eum numquam perferendis nihil
+                    nisi fugiat consequatur nulla excepturi!</p>
+                <button id="pro">Create Your Presentation</button>
+            </div>
+            <img src="./img/tests1.svg" alt="">
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

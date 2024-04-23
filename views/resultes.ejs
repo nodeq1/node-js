@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700;900&display=swap"
+        rel="stylesheet">
+    
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 20px;
+        }
+
+        .box {
+            margin-top: 20px;
+            width: 90%;
+            background-color: black;
+            border-radius: 6px;
+            padding: 10px 20px;
+            display: flex;
+            gap: 20px;
+            flex-direction: column;
+        }
+
+        h4 {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <% if (arr.length == 0) { %>
+        <h1 style="text-align: center; margin-top: 40px;">No Data Available</h1>
+    <% } else { %>
+        <h1>results: <%= arr.length %></h1>
+        <% arr.forEach((item) => { %>
+            <div class="box">
+                <h4>Email: <%= item.email %> </h4>
+            </div>
+        <% }) %>
+    <% } %>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

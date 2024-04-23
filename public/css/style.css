@@ -1,0 +1,229 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+
+.container{
+    padding-left:100px ;
+    padding-right:100px ;
+    margin-left: auto;
+    margin-right: auto;
+}
+html{
+     font-family: 'Poppins', sans-serif;;
+}
+
+nav{
+    height: 60px;
+    position: relative;
+    box-shadow: 0 0 5px 0 #ddd;
+    overflow: hidden;
+
+}
+
+nav .container{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .container .hed{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    height: 100%;
+}
+
+nav .container .hed h1{
+    color: #0f288c;
+    font-size: 35px;
+}
+
+nav .container ul{
+  display: flex;
+  align-items: center;
+  list-style: none;
+
+}
+nav .container ul li{
+   font-size: 17px;
+   color: #2b3a48;
+   position: relative;
+   cursor: pointer;
+   padding:0 20px;
+   display: flex;
+   align-items: center;
+   height: 60px;
+   transition: 0.3s;
+}
+nav .container ul .active,
+nav .container ul li:hover{
+    color: #0f288c;
+}
+nav .container ul .active::before,
+nav .container ul li::before{
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: #0f288c;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    transition: 0.3s;
+    z-index: 1;
+
+} 
+nav .container ul .active::before,
+nav .container ul li:hover::before{
+    width: 100%;
+}
+
+nav .container .log{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 18px;
+}
+nav .container .log h3{
+font-size: 16px;
+}
+nav .container .log img{
+  width: 30px;
+  cursor: pointer;
+}
+nav .container .log i{
+    font-size: 13px;
+    transform: translateX(-13px);
+    color: #2b3a48;
+    cursor: pointer;
+}
+nav .container .log .logout{
+    padding: 5px 15px;
+    color: white;
+    background-color: #ff6868;
+    border-radius: 6px;
+    font-size: 13px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+nav .container .log .logout:hover{
+    background-color: red;
+}
+nav .container .log p{
+    padding: 5px 15px;
+    background-color:#0f288c ;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    border: 3px solid #fff;
+    transition: 0.3s;
+
+}
+nav .container .log p:hover{
+    background-color: #ffd88b;
+    border: 3px solid #ffd88b;
+    color:white;
+    border-radius: 0;
+    box-shadow: 0 0 5px 0 #ffd88b;
+
+}
+.hero{
+    height: calc(100vh - 60px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+
+}
+.hero::before{
+    content: "";
+    width: 300px;
+    height: 300px;
+    background-image: linear-gradient(-45deg, #0f288c 0%, #829bff 100%);
+    position: absolute;
+    top: -150px;
+    right: -150px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px 0 #999;
+
+}
+.hero::after{
+    content: "";
+    width: 300px;
+    height: 300px;
+    background-image: linear-gradient(-45deg, #0f288c 0%, #829bff  100%);
+    position: absolute;
+    bottom: -150px;
+    left: -150px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px 0 #999;
+
+}
+.hero .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.hero .container .content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+.hero .container .content h1{
+    color:#2b3a48 ;
+    text-align: center;
+}
+.hero .container .content h1 > span{
+    background-image: linear-gradient(-45deg, #0f288c 0%, #829bff  100%);
+    color: white;
+    padding: 5px;
+    border-radius: 55px;
+}
+.hero .container .content p{
+    color:#2b3a48 ;
+    text-align: center;
+}
+.hero .container .content a{
+    text-align: center;
+}
+.hero .container .content  button{
+    width: 50%;
+    padding: 15px;
+    border: none;
+    background-color: #0f288c;
+    font-size: 15px;
+    color: white;
+    border-radius: 3px;
+    transition: 0.3s;
+    cursor: pointer;
+    margin: 20px auto;
+    box-shadow: 0 0 5px 0 #0f288c;
+    transform: scale(1.1);
+}
+.hero .container .content button:hover{
+    background-color: #ffd88b;
+    border-radius: 10px;
+    border-radius: 0;
+    box-shadow: 0 0 5px 0 #ffd88b;
+
+}
+.hero .container img{
+    width: 50%;
+}
+
+.name{
+    padding: 0 50px;
+    font-weight: bold;
+    color: #2b3a48;
+}
+
+
+
